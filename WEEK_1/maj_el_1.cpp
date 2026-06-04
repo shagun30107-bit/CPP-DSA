@@ -21,6 +21,7 @@ using namespace std;
         if (ct > n/2) return el;
         return -1;
     }
+
 int main(){
     return 0;
 }
