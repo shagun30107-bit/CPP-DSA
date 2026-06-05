@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
  vector<int> searchRange(vector<int>& nums, int target) {
-        //O(N)
+        //O(N)(do it again)
         int n = nums.size();
         vector<int> temp={-1,-1};
         int v=0;
@@ -17,7 +17,6 @@ using namespace std;
         }
         return temp;
     }
-
 int main(){
     return 0;
 }
