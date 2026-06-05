@@ -10,7 +10,6 @@ using namespace std;
         }
         return index;
     }
-
 int main(){
     return 0;
-}
+}   
