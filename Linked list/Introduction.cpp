@@ -44,10 +44,36 @@ Node* convertArr2LL(vector<int> &arr){
     }
     return head;
 }
+
+int lengthOfLL(Node* head){
+    int cnt=0;
+    Node* temp = head;
+    while(temp){
+        temp = temp->next;
+        cnt++;
+    }
+    return cnt;
+}
+
+int checkIfpresent(Node* head , int val){
+    Node* temp = head;
+    while(temp){
+        if(temp->data == val) return 1;
+        temp = temp->next;
+    }
+    return 0;
+}
+
 int main(){
     vector<int> arr = {2,5,8,7};
     // Node* y = new Node(arr[0] , nullptr);
     // cout << y->data ; 
     Node* head = convertArr2LL(arr);
-    cout << head->data;
+    // cout << head->data;
+    // Traverse
+    Node* temp = head;
+    while(temp){
+        cout << temp->data << " ";
+        temp = temp->next;
+    }
 }
