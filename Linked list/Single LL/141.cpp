@@ -10,6 +10,7 @@ struct ListNode {
 class Solution {
 public:
 // METHOD-1
+// TC-O(N*2*LOGN) & SC-O(N)
     bool hasCycle(ListNode *head) {
         map<ListNode* , int> mpp;
         ListNode* temp = head;
