@@ -21,4 +21,21 @@ public:
         }
         return false;
     }
+
+// Method-2
+// Tortoise and Hare
+// Move slow 1 step and fast 2 steps
+// And at one time they overlap means (slow==fast) that ensures that their is a loop if it does not then not a Loop
+// But why they overlap bcoz whenever u move slow anf fast pointer , distance b/w them reduces fast->slow
+//So we are sure that it their is loop then slow and fast pointer must be overlap
+    bool hasCycle1(ListNode *head) {
+        ListNode* slow=head;
+        ListNode* fast=head;
+        while(fast != NULL && fast->next != NULL){
+            slow=slow->next;
+            fast=fast->next->next;
+            if(slow==fast) return true;
+        }
+        return false;
+    }
 };
