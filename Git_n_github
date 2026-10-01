@@ -1,0 +1,94 @@
+// GIT
+// It's the Version control system that helps to trackchanges in code.
+// Mainly use for collaboration and to track the history.
+
+// GITHUB
+// WEBSITE that allows developers to store & manage their code using git.
+
+// To check the git version : git --version
+
+// Git Configuration
+// git config --global user.name "Your Name"
+// git config --global user.email "Your Email"
+// To check the configuration : git config --list
+
+// To clone a repository : git clone <repo link>
+// cd <repo name> // to enter into the repo (change directory)
+// To clear the terminal : clear
+// List of files in the directory : ls
+// Hide the files in the directory : ls -h
+// To check the status of the repo : git status
+
+// After modifying the files, we need to add them to the staging area before committing.
+// To add a file to the staging area : git add <file name>
+// To add all the modified files to the staging area : git add .
+// To commit the changes : git commit -m "commit message"
+
+// Local(Laptop) to Remote(Github) : git push origin <branch name>
+
+// To exit from repo : cd ..
+
+// To create new folder : mkdir <folder name>
+
+// Init command
+// To create a new git repository : git init
+// git init
+// git remote add origin <repo link> // to add remote repository
+// git remote -v // to check the remote repository
+// git branch // to check the current branch
+// git branch -M main // to rename the default branch to main
+// git push -u origin main // to push the code to the remote repository
+// -u means upstream, it sets the default remote and branch for the current branch. 
+// So that next time we can simply use git push or git pull without specifying the remote and branch name.
+
+// WORKFLOW
+// Create Github repo -> Clone -> Changes -> Add -> Commit -> Push 
+
+
+// GIT BRANCHES
+// Branches are used to create a separate line of development in a project.
+
+// Branch commmands
+// To check branch : git branch <branch name>
+// To rename a branch : git branch -m <old branch name> <new branch name>
+// To switch to a branch : git checkout <branch name>
+// To create a new branch : git checkout -b <branch name>
+// To delete a branch : git branch -d <branch name>
+
+
+// MERGING CODE
+// Merging is the process of combining the changes from one branch into another branch.
+
+// Way 1
+// git diff <branch name> // to check the difference between the branches
+// git merge <branch name> // to merge 2 branches
+
+// Way 2
+// git pull origin <branch name> // to pull the changes from remote branch to local branch
+
+// rESOLVING mERGE cONFLICTS
+// Means 2 branches neh same line mei changes kia 
+// Merge conflicts occur when git is unable to automatically merge the changes from two branches.
+// Tho hume manually btana hoga ki konsa code rakhna hai aur konsa delete karna hai.
+
+
+// UNDOING CHANGES
+// Case-1: Staged Changes
+// git reset <file name> // to unstage the changes
+// git reset // to unstage all the changes
+
+// Case-2: Commited Changes(for one commit)
+// git log // to check the commit history
+
+// HEAD~1 // to go back to the previous commit
+// git reset HEAD~1 // to undo the last commit
+
+// Case-3: Commited Changes(for multiple commits)
+
+// Hash means the unique identifier for each commit.
+// git reset <commit hash> // to undo the changes from a specific commit
+// git reset --hard <commit hash> // to undo the changes from a specific commit and discard all the changes after that commit
+
+// FORK
+// Forking is the process of creating a copy of a repository on your own GitHub account.
+
